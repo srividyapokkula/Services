@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+  <!-- <---google fonts links-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <style>
+    .backgrnd {
+      height: 600px;
+      width: 1550px;
+    }
+
+    h1 {
+      color: rgb(4, 67, 37);
+      font-family: "Rubik Wet Paint", system-ui;
+      font-weight: 600;
+      font-style: oblique;
+      font-size: 70px;
+      margin-left: 480px;
+    }
+
+    .para {
+      font-style: italic;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .box {
+      height: 500px;
+      width: 1300px;
+      margin: auto;
+    }
+
+    .box:hover {
+      box-shadow: 3px 3px 10px 10px rgb(117, 114, 114);
+    }
+
+    .weddingimg {
+      height: 500px;
+      width: 500px;
+      transition: width 5s, height 3s;
+
+    }
+
+    .weddingimg:hover {
+      width: 300px;
+      height: 300px;
+    }
+
+    .weddingpara {
+      position: absolute;
+      left: 610px;
+      top: 800px;
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    .tqimg {
+      margin-left: 500px;
+      margin-top: 300px;
+    }
+
+    .bdayimg {
+      height: 500px;
+      width: 500px;
+      transition: width 5s, height 3s;
+    }
+
+    .bdayimg:hover {
+      width: 300px;
+      height: 300px;
+    }
+
+    .box1 {
+      height: 500px;
+      width: 1300px;
+      margin: auto;
+      margin-top: 100px;
+      background: linear-gradient();
+    }
+
+    .box1:hover {
+      box-shadow: 3px 3px 10px 10px rgb(117, 114, 114);
+    }
+
+    .bdaypara {
+      position: absolute;
+      left: 650px;
+      top: 1450px;
+      font-size: 20px;
+      font-style: italic;
+
+    }
+
+    .tq2 {
+      height: 130px;
+      width: 250px;
+      margin-left: 500px;
+      margin-top: 300px;
+    }
+
+    .box2 {
+      height: 500px;
+      width: 1300px;
+      margin: auto;
+      margin-top: 100px;
+    }
+
+    .box2:hover {
+      box-shadow: 3px 3px 10px 10px rgb(117, 114, 114);
+    }
+
+    .anvrsryimg {
+      height: 500px;
+      width: 500px;
+      transition: width 5s, height 3s;
+
+    }
+
+    .anvrsryimg:hover {
+      width: 300px;
+      height: 300px;
+    }
+
+    .anvrsrypara {
+      position: absolute;
+      left: 650px;
+      top: 2080px;
+      font-size: 20px;
+      font-style: italic;
+
+    }
+
+    .tq3 {
+      height: 130px;
+      width: 250px;
+      margin-left: 500px;
+      margin-top: 300px;
+
+    }
+
+    .box3 {
+      height: 500px;
+      width: 1300px;
+      margin: auto;
+      margin-top: 100px;
+    }
+
+    .box3:hover {
+      box-shadow: 3px 3px 10px 10px rgb(117, 114, 114);
+    }
+
+    .valntimg {
+      height: 500px;
+      width: 500px;
+      transition: width 5s, height 3s;
+
+    }
+
+    .valntimg:hover {
+      width: 300px;
+      height: 300px;
+    }
+
+    .valantpara {
+      position: absolute;
+      left: 650px;
+      top: 2650px;
+      font-size: 20px;
+      font-style: italic;
+
+    }
+
+    .tq4 {
+      height: 130px;
+      width: 250px;
+      margin-left: 500px;
+      margin-top: 200px;
+
+    }
+
+    .footer {
+      height: 100px;
+      background-color: rgb(72, 103, 141);
+      color: whitesmoke;
+      margin: auto;
+      margin-top: 20px;
+      font-size: 15px;
+
+
+    }
+
+    .rights {
+      margin-left: 600px;
+      margin-top: 40px;
+      font-size: larger;
+    }
+
+
+
+    /* .footimg{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin
+      } */
+
+    @media only screen and (min-width:320px) and (max-width:480px) {
+      .backgrnd {
+        height: 100px;
+        max-width: 1300px;
+      }
+
+      h1 {
+        color: rgb(4, 67, 37);
+        font-family: "Rubik Wet Paint", system-ui;
+        font-weight: 600;
+        font-style: oblique;
+        font-size: 30px;
+        margin-left: 50px;
+      }
+
+      .para {
+        font-style: italic;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      .box {
+        height: 830px;
+        width: 370px;
+        margin: auto;
+
+      }
+
+      .box:hover {
+        box-shadow: 3px 3px 10px 10px rgb(117, 114, 114);
+      }
+
+      .weddingimg {
+        height: 350px;
+        width: 375px;
+        transition: width 5s, height 3s;
+        margin-left: 1px;
+        margin-top: -1px;
+
+      }
+
+      .weddingimg:hover {
+        width: 200px;
+        height: 250px;
+      }
+
+      .weddingpara {
+        position: absolute;
+        top: 1150px;
+        left: 10px;
+        font-size: 15px;
+        font-style: italic;
+      }
+
+      .tqimg {
+        margin-left: 150px;
+        margin-top: 380px;
+        width: 200px;
+      }
+
+      .bdayimg {
+        height: 350px;
+        width: 375px;
+        transition: width 5s, height 3s;
+      }
+
+      .bdayimg:hover {
+        width: 200px;
+        height: 250px;
+      }
+
+      .box1 {
+        height: 700px;
+        width: 375px;
+        margin: auto;
+        margin-top: 90px;
+      }
+
+      .box1:hover {
+        box-shadow: 3px 3px 10px 10px rgb(117, 114, 114);
+      }
+
+      .bdaypara {
+        position: absolute;
+        left: 10px;
+        top: 2080px;
+        font-size: 15px;
+        font-style: italic;
+
+      }
+
+      .tq2 {
+        height: 100px;
+        width: 150px;
+        margin-left: 180px;
+        margin-top: 250px;
+
+      }
+
+      .box2 {
+        height: 750px;
+        width: 375px;
+        margin: auto;
+        margin-top: 100px;
+      }
+
+      .box2:hover {
+        box-shadow: 3px 3px 10px 10px rgb(117, 114, 114);
+      }
+
+      .anvrsryimg {
+        height: 350px;
+        width: 375px;
+        transition: width 5s, height 3s;
+
+      }
+
+      .anvrsryimg:hover {
+        width: 200px;
+        height: 250px;
+      }
+
+      .anvrsrypara {
+        position: absolute;
+        left: 10px;
+        top: 2870px;
+        font-size: 15px;
+        font-style: italic;
+
+      }
+
+      .tq3 {
+        height: 130px;
+        width: 150px;
+        margin-left: 180px;
+        margin-top: 240px;
+
+      }
+
+      .box3 {
+        height: 700px;
+        width: 375px;
+        margin: auto;
+        margin-top: 100px;
+      }
+
+      .box3:hover {
+        box-shadow: 3px 3px 10px 10px rgb(117, 114, 114);
+      }
+
+      .valntimg {
+        height: 350px;
+        width: 375px;
+        transition: width 5s, height 3s;
+
+      }
+
+      .valntimg:hover {
+        width: 200px;
+        height: 250px;
+      }
+
+      .valantpara {
+        position: absolute;
+        left: 10px;
+        top: 3700px;
+        font-size: 15px;
+        font-style: italic;
+
+      }
+
+      .tq4 {
+        height: 130px;
+        width: 150px;
+        margin-left: 180px;
+        margin-top: 180px;
+
+      }
+
+      .footer {
+        height: 100px;
+        background-color: rgb(72, 103, 141);
+        color: rgb(0, 0, 0);
+
+
+      }
+
+      .footimg {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+      }
+
+      .rights {
+        font-size: 20px;
+        margin-left: 13px;
+        margin-top: 20px;
+      }
+  </style>
+</head>
+
+<body>
+
+
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="ser1.jpeg" class="d-block w-100" alt="..." height="500px">
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="ser2.jpeg" class="d-block w-100" alt="..." height="500px">
+      </div>
+      <div class="carousel-item">
+        <img src="ser3.jpeg" class="d-block w-100" alt="..." height="500px">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+  <h1>OUR SERVICES</h1>
+  <p class="para">On special occasions of valentines and anniversary, we gift our partners' beautiful flowers as a
+    symbol of our love. Similarly, we send flowers for someone who is sick to brighten their day. We also send flowers
+    as a token of condolence during funerals.</p><br><br><br><br>
+
+
+  <div class="feedback">
+    <div class="box">
+      <img src="./wedding.jpeg" class="weddingimg">
+      <p class="weddingpara">
+        Thank you so much for the beautiful job you did on such short notice for the wedding <br>on Feb 11th. The
+        florals
+        were unique, gorgeous, perfect for my daughter, and very, very fresh.<br> You are truly a floral artist with
+        exquisite taste. We made sure everyone knew where the<br> flowers were from. We also shared that your kindness,
+        enthusiasm and professionalism were<br> essential as I was making arrangements from another state, sight unseen!
+        My
+        daughter was <br>in tears when she saw her bouquet, could not have imagined anything more perfect. <br>Thank
+        you,
+        thank
+        you! <br><br><br>---SRIVIDYA</p>
+      <img src="./tq.jpg" class="tqimg">
+    </div>
+  </div>
+  <div class="box1">
+    <img src="./bday.jpeg" class="bdayimg">
+    <p class="bdaypara">The beautiful flowers were such a wonderful and unexpected surprise. Thank you<br> for being so
+      thoughtful and making my day extra special. I am truly grateful for your<br> generosity in sending such a gorgeous
+      bouquet my way. It is a gift I will treasure.<br><br>---ASHWINI</p>
+    <img src="./tq2.avif" class="tq2">
+  </div>
+  <div class="box2">
+    <img src="./anniverssary.jpeg" class="anvrsryimg">
+    <p class="anvrsrypara">
+      Happy anniversary! I'm so excited about the future because I can't <br>wait to make all of our dreams come true.
+      Happy anniversary and cheers<br> to many more. I believe everything happens for a reason because it led me to
+      you.<br><br>---APARNA </p>
+    <img src="./tq3.avif" class="tq3">
+  </div>
+  <div class="box3">
+    <img src="./valntaines.jpeg" class="valntimg">
+    <p class="valantpara">Most Americans believe Valentine's Day is for both romantic and platonic<br> relationships.
+      Among Americans who plan to celebrate Valentine's Day, 82% <br>say they will do so with a romantic partner. Fewer
+      say they will spend the holiday <br>with family members (27%) or friends (14%).<br><br>---SUCHITHRA</p>
+    <img src="./tq4.png" class="tq4">
+  </div>
+  <div class="footer">
+
+    <P class="rights">All &copy rights are resereved by sustainabulity.</P>
+    <!-- <img src="./foot.jpg" class="footimg"> -->
+  </div>
+
+
+</body>
+
+</html>
